@@ -1,0 +1,25 @@
+{
+  "name": "simple-react-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxs24sxl/simple-react-demo.git"
+  },
+  "author": "lxs24sxl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxs24sxl/simple-react-demo/issues"
+  },
+  "homepage": "https://github.com/lxs24sxl/simple-react-demo#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0"
+  }
+}
