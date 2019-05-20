@@ -71,7 +71,18 @@ function setAttribute(dom, name, value) {
     dom.removeAttribute(name, value);
   }
 }
-
+let temp = {
+  fontSize: 20, 
+  color: 'green'
+}
+const element = (
+  <div className={"test"}>
+    <h1 style="color: red;" class="test-title" onClick={test}>Hello, world!</h1>
+    <h2 style={temp} className={"test-desc"}>It is {new Date().toLocaleTimeString()}.</h2>
+  </div>
+);
+console.log('element', element)
+console.log('element', JSON.stringify(element))
 function test() {
   console.log('test')
 }
