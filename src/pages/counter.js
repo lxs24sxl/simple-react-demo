@@ -22,9 +22,10 @@ class Counter extends React.Component {
 
   render() {
     return (
-      <div className="test">
+      <div className="test" style="color: red;">
         <h1>count: {this.state.num }</h1>
         <button onClick={() => this.onClick()}>add</button>
+        haha
       </div>
     )
   }

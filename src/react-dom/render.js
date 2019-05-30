@@ -2,6 +2,7 @@
 
 import Component from '../react/component'
 import { setAttribute } from './dom'
+import { diff } from './diff'
 
 function createComponent(component, props) {
   let inst;
@@ -42,7 +43,8 @@ export function renderComponent(component) {
     component.componentWillUpdate();
   }
 
-  base = _render(renderer);
+  // base = _render(renderer);
+  base = diff( component.base, renderer );
 
   if (component.base) {
     if (component.componentDidUpdate) component.componentDidUpdate();
@@ -50,9 +52,9 @@ export function renderComponent(component) {
     component.componentDidMount();
   }
 
-  if (component.base && component.base.parentNode) {
-    component.base.parentNode.replaceChild(base, component.base);
-  }
+  // if (component.base && component.base.parentNode) {
+  //   component.base.parentNode.replaceChild(base, component.base);
+  // }
 
 
   component.base = base;
